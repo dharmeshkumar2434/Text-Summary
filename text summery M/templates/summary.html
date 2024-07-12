@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="original_title">Original Text</p>
+                <div class="scrollable">
+                    <p>{{ original_txt }}</p>
+                </div>
+                <p class="total-words"><strong>Total Words:</strong> {{ len_orig_txt }}</p>
+            </div>
+            <div class="col-md-6">
+                <p class="summary_title">Summary</p>
+                <div class="scrollable">
+                    <p>{{ summary }}</p>
+                </div>
+                <p class="total-words"><strong>Total Words:</strong> {{ len_summary }}</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a class="btn btn-secondary mt-3" href="/">Go Back</a>
+        </div>
+    </div>
+{% endblock %}

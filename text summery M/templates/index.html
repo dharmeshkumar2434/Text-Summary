@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="jumbotron text-center">
+        <h1 class="heading">Welcome to the Text Summarization Tool</h1>
+        <p class="lead">Retrieve the best summary for the text</p>
+    </div>
+    <form action="/analyze" method="POST">
+        <div class="form-group">
+            <textarea name="rawtext" class="form-control" rows="10" placeholder="Enter your raw text here..."></textarea>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+{% endblock %}
